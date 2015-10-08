@@ -4,9 +4,9 @@ MAINTAINER Brandfolder, Inc. <developers@brandfolder.com>
 ENV ES_HOME /usr/share/elasticsearch
 ENV PATH $ES_HOME/bin:$PATH
 
-RUN plugin -i elasticsearch/shield/latest
+RUN plugin install elasticsearch/shield/latest
 ENV PATH $ES_HOME/bin/shield:$PATH
-RUN plugin -i lmenezes/elasticsearch-kopf
+RUN plugin install lmenezes/elasticsearch-kopf
 
 ENV ES_USER admin
 ENV ES_PASS password

@@ -1,4 +1,4 @@
-FROM elasticsearch:latest
+FROM elasticsearch:2.0
 MAINTAINER Brandfolder, Inc. <developers@brandfolder.com>
 
 ENV ES_HOME /usr/share/elasticsearch
